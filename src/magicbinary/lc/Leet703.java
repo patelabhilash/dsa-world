@@ -9,10 +9,11 @@ public class Leet703 {
     PriorityQueue<Integer> pq;
     int size;
     
-    public KthLargest(int k, int[] nums) {
+    public String KthLargest(int k, int[] nums) {
         this.size = k;
         pq = new PriorityQueue<Integer>(k);
         Arrays.stream(nums).forEach( e-> this.add(e));
+        return null;
     }
     
     public int add(int val) {
